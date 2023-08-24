@@ -37,11 +37,13 @@ We have a lot of empty spaces, and the bigger the message is the worse this wast
 
 # Encrypting without a matrix:
 
-We can look at this encryption method as an i that contains a position of a character in the message **string**, so we're dealing with an array.
+We can look at this encryption method as a variable **i** that contains a position of a character in the message **string**.
+
+*Note that now we're dealing with one dimensional arrays*
 
 This position starts at 0, which is 'H' and jumps 6 positions for the 6, (because we have a gap of 5 spaces between) which is the second 'O'.
 
-Then it could jump again, but it will exceed the lenght of the messsage, when that happens it's time to start again from position 1, which is the second letter in the array and the third letter in the encrypted message.
+Then it could jump again, but it would exceed the lenght of the messsage, when that happens it's time to start again from position 1, which is the second letter in the array and the third letter in the encrypted message.
 
 The problem now is that the jumps have different lengths, and the algorithm has to take that into consideration.
 
