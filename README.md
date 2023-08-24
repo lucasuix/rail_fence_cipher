@@ -43,15 +43,15 @@ We can look at this encryption method as a variable **i** that contains a positi
 
 This position starts at 0, which is 'H' and jumps 6 positions for the 6, (because we have a gap of 5 spaces between) which is the second 'O'.
 
-Then it could jump again, but it would exceed the lenght of the messsage, when that happens it's time to start again from position 1, which is the second letter in the array and the third letter in the encrypted message.
+Then it could jump again, but it would exceed the length of the messsage. When that happens it's time to start again from position 1, which is the second letter in the array and the third letter in the encrypted message.
 
 The problem now is that the jumps have different lengths, and the algorithm has to take that into consideration.
 
-It's not hard to see that the first gap, or the first jump, can be calculated by:
+It's not hard to see that the first jump, can be calculated by:
 
 > (key - 1) * 2
 
-Now that we have the information of the first gap, we can calculate the information about the other gaps and store it in an array. 
+Now that we have the information of the first jump, we can calculate the information about the other jumps and store it in an array. 
 
 The array will be completed like this:
 ```
