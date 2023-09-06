@@ -64,9 +64,9 @@ while (i < key) {
   k[i] = q - m;
   m = m + 2;
   i++;
-} k[key - 1] = 0
+} k[key - 1] = k[0]
 
-k : {6, 4, 2, 0}
+k : {6, 4, 2, 6}
 ```
 
 *Observe that k has all the jumps that will be done in the encryption process.
